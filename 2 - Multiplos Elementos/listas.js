@@ -24,4 +24,5 @@ console.log(listaDeDestinos);
 listaDeDestinos.splice(2, 1); 
 console.log(listaDeDestinos);
 // Mostrar só a posição que eu quero mostrar
+// Nesse caso ele pega a posição após eu usar o .splice();
 console.log(listaDeDestinos[2])
