@@ -14,19 +14,32 @@ console.log(listaDeDestinos);
 const idadeComprador = 17;
 estaAcompanhada = true; // Operador booleano, é definido como "true" (verdadeiro) ou "false" (falso)
 
-if(idadeComprador >=18) {
+if (idadeComprador >= 18) {
     console.log("Comprador maior de idade");
-    listaDeDestinos.splice(2, 1); 
+    listaDeDestinos.splice(2, 1);
     console.log(listaDeDestinos);
 } else {
     // Já está condicionada que ela é menor de idade e por isso não pode comprar
-    if(estaAcompanhada) { // Nesse caso não é necessário declarar o (estaAcompanhada == true)
+    if (estaAcompanhada) { // Nesse caso não é necessário declarar o (estaAcompanhada == true)
         console.log("Comprador está acompanhado");
-        listaDeDestinos.splice(2, 1); 
+        listaDeDestinos.splice(2, 1);
         console.log(listaDeDestinos);
     } else {
-        console.log("A pessoa é menor de idade e não está acompanhada.")
+        console.log("A pessoa é menor de idade e não está acompanhada.");
     }
+}
+
+// É boa prática usar o código limpo o máximo possível então a opção abaixo é melhor
+if (idadeComprador >= 18) {
+    console.log("Comprador maior de idade");
+    listaDeDestinos.splice(2, 1);
+    console.log(listaDeDestinos);
+} else if (estaAcompanhada == true) {
+    console.log("Comprador está acompanhado");
+    listaDeDestinos.splice(2, 1);
+    console.log(listaDeDestinos);
+} else {
+    console.log("A pessoa é menor de idade e não está acompanhada.");
 }
 
 
