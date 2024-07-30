@@ -1,5 +1,5 @@
 // Código vindo de 3 - operadoresLogicosMultiplos
-console.log("Trabalhando com Loops: WHILE")
+console.log("Trabalhando com Loops: FOR")
 
 const listaDeDestinos = new Array(
     "Salvador",
@@ -15,20 +15,17 @@ const idadeComprador = 19;
 const estaAcompanhada = false;
 let temPassagem = false;
 const destino = "Maringá";
+destinoExiste = false;
 
 const podeConprar = (idadeComprador >= 18 || estaAcompanhada == true);
 
-let contador = 0;
-while (contador < 5) {
-    destinoExiste = false;
-    if (listaDeDestinos[contador] == destino) {
+for (let i = 0 ; i < 5; i ++) { //  O formato do for é for(variável; condição; comando pós loop)
+    if (listaDeDestinos[i] == destino) {
         console.log("Destino encontrado");
         destinoExiste = true;
         break;
     } 
-    contador += 1;
 }
-
 console.log("Destino encontrado: ", destinoExiste)
 
 if(podeConprar && destinoExiste) {
@@ -36,6 +33,4 @@ if(podeConprar && destinoExiste) {
 } else {
     console.log("Desculpe, um erro aconteceu!");
 }
-
-
 
