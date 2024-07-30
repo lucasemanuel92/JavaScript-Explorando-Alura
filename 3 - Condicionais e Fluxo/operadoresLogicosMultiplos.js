@@ -28,3 +28,6 @@ if(idadeComprador >= 18 && temPassagem == true) {
 } else {
     console.log("Não pode embarcar");
 }
+
+// Operadores Lógicos são usados para condicionar as necessidades
+// Para usar o OU se usa "||" e para usar o E se usa "&&" 
