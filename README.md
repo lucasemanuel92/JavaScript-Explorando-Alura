@@ -1,4 +1,5 @@
 # JavaScript-Explorando-Alura
+# COMPLETO / COMPLETE
 
 ## PT-BR
 Esse repositório é relacionado ao JavaScript: explorando a linguagem, oferecido na plataforma Alura. O curso conta com estudos na área de Javascript. O curso aborda temas básicos como condicionais e fluxo de execução, variáveis, coleções,
